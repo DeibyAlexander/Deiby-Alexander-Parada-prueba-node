@@ -10,7 +10,7 @@ const postProductos = async (req, res)=>{
         const connection = await getConnection();
         const result = await connection.query("INSERT INTO productos SET ?", producto);
 
-        res.json({result});
+        res.json(result);
 
     } catch (error) {
         console.log(error.message);

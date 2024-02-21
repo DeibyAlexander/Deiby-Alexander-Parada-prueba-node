@@ -11,11 +11,7 @@ app.set("port", 4000);
 
 //* Routes
 
-app.use(
-    direccionesRouter, 
-    postProductos,
-    postTiendasProductos
-    )
+app.use(direccionesRouter, postProductos, postTiendasProductos)
 
 
 export default app;
